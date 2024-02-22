@@ -1,0 +1,25 @@
+# Node.js
+node_modules/
+
+# Environment
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Optional: Editor directories
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
