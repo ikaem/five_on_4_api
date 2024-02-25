@@ -7,8 +7,10 @@
     /* Docs: [https://www.typescriptlang.org/tsconfig](https://www.typescriptlang.org/tsconfig) */
     "target": "ES2020",
     "module": "NodeNext",
-    "outDir": "bin",
-    "rootDir": "src",
+    // "outDir": "bin",
+    // "rootDir": "src",
+    "outDir": "./build" /* could set dist instead if you prefer */,
+    "rootDir": "./src",
     "strict": true,
     "noImplicitAny": false,
     "strictNullChecks": true,
