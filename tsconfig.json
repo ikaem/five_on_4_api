@@ -40,3 +40,9 @@
     // "__test__"
   ]
 }
+
+/* 
+
+  "outDir": "build", // Types should go into this directory. 
+  "declaration": true // Ge
+*/
