@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import { JWTTokenExpiresInConstants } from '../../../features/core/utils/constants/jwt-token-expires-in.constants.js';
 
-type DecodeAuthTokenArgs = {
+export type DecodeAuthTokenArgs = {
   token: string;
   // secret: string;
 };
@@ -47,6 +47,7 @@ export class JsonWebTokenWrapper {
 
       console.log(decoded);
       // TODO not sure aboiut this
+      // TODO come back to this
       return decoded as { data: EncodeAuthTokenPayload } | null;
     } catch (e) {
       // TODO log properly
