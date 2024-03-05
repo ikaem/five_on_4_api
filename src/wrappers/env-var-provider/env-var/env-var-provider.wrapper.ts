@@ -32,6 +32,7 @@ export class EnvVarProviderWrapper implements EnvironmentVariablesProvider {
       // jwtSecret: envVar.get('JWT_SECRET').required().asString(),
       // TODO temp only
       jwtSecret: 'jwtSecret',
+      googleAuthServerId: envVar.get('GOOGLE_AUTH_SERVER_ID').required().asString(),
     };
   }
 }
