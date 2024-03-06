@@ -14,6 +14,8 @@ export type EnvironmentVariablesProviderDB = {
 
 export type EnvironmentVariablesProviderAuth = {
   jwtSecret: string;
+  // TODO not even sure this is needed
+  googleAuthServerId: string;
 };
 
 export type EnvironmentVariablesProviderServer = {

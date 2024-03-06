@@ -2,6 +2,7 @@
 
 import { PlayerEntity } from '../../../players/data/entities/player.entity.js';
 
+// TODO move eventually to typeorm folder
 // Entity("Match")
 export class MatchEntity {
   constructor(
