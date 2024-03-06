@@ -17,7 +17,7 @@ export type EncodeAuthTokenArgs = {
 // type EncodeAuthTokenPayload = {
 //   userEmailAddress: string;
 // };
-type EncodeAuthTokenPayload = Record<string, object>;
+type EncodeAuthTokenPayload = Record<string, any>;
 
 export class JsonWebTokenWrapper {
   constructor(private readonly _secret: string) {}

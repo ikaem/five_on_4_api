@@ -14,6 +14,7 @@ export class MatchesRouter {
     matchesRouter.get('/', _getMatchesController.execute);
     matchesRouter.get('/:id', _getMatchController.execute);
     matchesRouter.post('/', _createMatchController.execute);
+
     this._router = matchesRouter;
   }
 

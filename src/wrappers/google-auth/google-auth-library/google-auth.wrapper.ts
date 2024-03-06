@@ -6,7 +6,12 @@ export class GoogleAuthWrapper implements GoogleAuth {
   private client: OAuth2Client;
 
   constructor(authEnvVars: EnvironmentVariablesProviderAuth) {
-    this.client = new OAuth2Client(authEnvVars.googleAuthServerId);
+    // TODO temp hardcoded
+    // TODO this is not the correct one - generate new ones in a new proejct
+    // this.client = new OAuth2Client(authEnvVars.googleAuthServerId);
+    this.client = new OAuth2Client(
+      '164480400700-pps7p7vcadr2dihal2rk7nhg2982tgja.apps.googleusercontent.com',
+    );
   }
 
   async verifyIdToken(idToken: string): Promise<ValidatedGoogleAuthResponse> {
