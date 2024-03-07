@@ -58,7 +58,10 @@ export class DepenedencyInitializerWrapper {
     const createSecureHttpOnlyCookieUseCase = new CreateSecureHttpOnlyCookieUseCase(cookieWrapper);
 
     // controllers
-    const getMatchesController = new GetMatchesController(getMatchesUseCase);
+    const getMatchesController = new GetMatchesController(
+      getMatchesUseCase,
+      createSecureHttpOnlyCookieUseCase,
+    );
     const getMatchController = new GetMatchController(getMatchUseCase);
     const createMatchController = new CreateMatchController(createMatchUseCase);
     const authWithGoogleController = new AuthWithGoogleController(
